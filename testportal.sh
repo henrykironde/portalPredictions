@@ -13,12 +13,10 @@
 module load git
 module load R
 module load singularity
+module load java
 
 git clone git@github.com:weecology/portalPredictions.git
 
 cd portalPredictions
 ls
 whoami
-Rscript install-packages.R
-Rscript tools/prepare_data.R
-Rscript PortalForecasts.R
