@@ -14,9 +14,7 @@ module load git
 module load R
 module load singularity
 module load java
-
-git clone git@github.com:weecology/portalPredictions.git
-
-cd portalPredictions
+java -jar agent.jar -jnlpUrl http://serenity.ifas.ufl.edu:8080/computer/portalpredictions-agent/slave-agent.jnlp -secret d57918ae5c84819d25d2e8dbe1dda68c9af337b2bb099d010bccbeb78c96d8f2 -workDir "/home/henrysenyondo/jenkins"
+sleep 2m
 ls
 whoami
